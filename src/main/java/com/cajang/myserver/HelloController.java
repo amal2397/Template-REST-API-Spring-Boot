@@ -8,8 +8,8 @@ import org.springframework.http.*;
 public class HelloController {
 
     @GetMapping("/users")
-    public int getUsers() {
-        return 1;
+    public String getUsers() {
+        return "Menampilkan Seluurh data user";
     }
 
     @GetMapping("/users/{id}")
