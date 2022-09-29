@@ -18,7 +18,7 @@ docker run -p 8080:8080 --name spring-boot-server amal2397/java-docker
 
 Run me locally
 ```bash
-./mwnw spring-boot:run
+./mvnw spring-boot:run
 ```
 
 ## Contributing
