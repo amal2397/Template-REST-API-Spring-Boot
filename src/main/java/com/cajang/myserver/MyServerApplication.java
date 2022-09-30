@@ -27,6 +27,7 @@ public class MyServerApplication {
 				System.out.println(beanName);
 			}
 			System.out.println("running done");
+			System.out.println("finish");
 
 		};
 	}
