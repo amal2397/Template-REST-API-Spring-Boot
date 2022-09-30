@@ -6,6 +6,7 @@
 #GET        http://localhost:8080/api/v1/users/2
 #GET        http://localhost:8080/api/v1/user?name=amal
 #POST       http://localhost:8080/api/v1/message
+#GET        http://localhost:8080/api/v1/greeting?name=amal
 
 ```
 
