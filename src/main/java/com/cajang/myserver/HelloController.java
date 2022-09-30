@@ -1,11 +1,26 @@
 package com.cajang.myserver;
 
 import org.springframework.web.bind.annotation.*;
+
+import com.cajang.myserver.Student.StudentService;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 
 @RestController
 @RequestMapping(path = "/api/v1", produces = MediaType.APPLICATION_JSON_VALUE)
 public class HelloController {
+
+    @Autowired
+    StudentService studentService;
+
+    @GetMapping("/getStudent")
+    public List getStudent(){
+        return studentService.getStudents();
+    }
+
 
     @GetMapping("/users")
     public String getUsers() {
