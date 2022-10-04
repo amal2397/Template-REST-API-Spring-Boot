@@ -1,18 +1,31 @@
 package com.cajang.myserver;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
+@RestController
 public class MyServerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MyServerApplication.class, args);
+	}
+
+	@GetMapping
+	public List<String> hello(){
+		List<String> list = new ArrayList<>();
+		list.add("Ichlasul");
+		list.add("Amal");
+		return list;	
 	}
 
 	@Bean
