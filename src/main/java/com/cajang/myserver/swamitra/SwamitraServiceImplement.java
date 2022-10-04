@@ -5,8 +5,10 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+
 @Service
 public class SwamitraServiceImplement implements SwamitraService{
+
 
     @Override
     public List<Swamitra> getAllSwamitra() {
@@ -22,5 +24,8 @@ public class SwamitraServiceImplement implements SwamitraService{
 
         return listswamitra;
     }
+
+
+    
     
 }
